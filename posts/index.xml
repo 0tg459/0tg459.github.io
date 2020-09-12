@@ -1,0 +1,103 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Hello Friend...</title>
+        <link>/posts/</link>
+        <description>Recent content in Posts on Hello Friend...</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Fri, 11 Sep 2020 22:28:57 -0400</lastBuildDate>
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>First Post</title>
+            <link>/posts/2020/09/first-post/</link>
+            <pubDate>Fri, 11 Sep 2020 22:28:57 -0400</pubDate>
+            
+            <guid>/posts/2020/09/first-post/</guid>
+            <description>Hej kompis&amp;hellip;</description>
+            <content type="html"><![CDATA[<p>Hej kompis&hellip;</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How to fail, fail, fail, fail and PASS the OSCP!</title>
+            <link>/posts/2020/09/how-to-fail-fail-fail-fail-and-pass-the-oscp/</link>
+            <pubDate>Wed, 09 Sep 2020 21:02:28 -0400</pubDate>
+            
+            <guid>/posts/2020/09/how-to-fail-fail-fail-fail-and-pass-the-oscp/</guid>
+            <description>“I know not how to aid you, save in the assurance of one of mature age, and much severe experience, that you cannot fail, if you resolutely determine, that you will not. “ ~Abraham Lincoln
+“Effort only fully releases its reward after a person refuses to quit.” ~Napoleon Hill
+“Ask and keep on asking and it will be given to you; seek and keep on seeking and you will find; knock and keep on knocking and the door will be opened to you” ~Jesus Christ</description>
+            <content type="html"><![CDATA[<p><em>“I know not how to aid you, save in the assurance of one of mature age, and much severe experience, that you cannot fail, if you resolutely determine, that you will not. “ ~Abraham Lincoln</em></p>
+<p><em>“Effort only fully releases its reward after a person refuses to quit.” ~Napoleon Hill</em></p>
+<p><em>“Ask and keep on asking and it will be given to you; seek and keep on seeking and you will find; knock and keep on knocking and the door will be opened to you”  ~Jesus Christ</em></p>
+<h3 id="why">Why?</h3>
+<p>In the fall of my 50th year on this third rock from the sun, I decided to teach myself the art of pen testing.  No…I don’t mean sitting at a desk all day, testing BICs, Pentels and Sharpies LOL!  I mean: “the practice of testing a computer system, network or web application to find security vulnerabilities that an attacker could exploit.”<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>  I also elected to test my skills by undertaking the grueling 48hr OSCP exam offered by Offensive Security Inc<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>  That “48hr” was NOT a typo! A valid question: WHY?  Well, to be honest, I needed a challenge after obtaining the coveted CISSP designation the summer before and I heard that the OSCP was <strong>hard</strong>…so I took it!</p>
+<h3 id="how">How?</h3>
+<p>I had read that it would be beneficial to get a basic grasp of a programming language and that Python was the best place to start as most exploits<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> were written in Python.  So, I took a Cybrary course, “python for Security Professionals” by Joe Perry<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, followed by “Advanced Penetration Testing” by Georgia Weidman<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.  On completion of these invaluable courses, I started to look around for a course that would help me prepare for the OSCP.  Now, there are a number of other excellent pen testing courses available from vendors such as Virtual Hacking Labs<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> , Elearnsecurity<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>  and Pentester Academy (formerly SecurityTube)<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>, but I felt that if I wanted to be successful in the exam, I needed to get used to the OSCP way of doing things, so I took the plunge on November 18th 2018 and signed up for the OSCP course<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.  I joined a couple online forums, asked some preliminary questions and got started. Now, truth be told, I wanted to get fingers to keyboard asap, so I skipped through the course manual and didn’t do the exercises…I found it boring (I heard the February 2020 update is better) and TBH, I just wanted to get to hacking 😁 Well, let&rsquo;s go see how that worked out for me! 😉</p>
+<h3 id="learning-experience-1">Learning Experience #1</h3>
+<p>I booked my first exam attempt for April 16th 2019…at 1AM!  Please don’t ask me why…this was sooooooo NOT aligned with my sleep cycle.  I got hopped-up on three cans od Red Bull (I hadn’t drunk the stuff since Y2K night, 20 yrs ago!) and went for it.   It DID NOT go well. I got paid in kind for “skipping the boring stuff”.  I needed 70 points to pass…I got 45.  Lessons learned:</p>
+<ol>
+<li>
+<p>getting wired on three cans of Red Bull…❌<strong>don’t do that!</strong></p>
+</li>
+<li>
+<p>Not paying heed to your PC overheating…until your 9yr-old CPU cooling component fails a half-hour before your exam, causing you to have to resurrect a standby machine…❌<strong>don’t do that!</strong></p>
+</li>
+<li>
+<p>Not excluding virtual machine folder from your antivirus software… ❌<strong>don’t do that!</strong></p>
+</li>
+</ol>
+<p>Eish!  It’s a wonder I made it to the end of the exam without resorting to banging my head against a wall!  Anyways, to cut a long story short, 23hrs and 45mins later, I collapsed at the finish line, on the “learning end” of the first exam attempt.  45 wasn’t bad for a first attempt, but I was hungry for that “pass”, so I waited out the cooling-off period, determined to give it another shot.</p>
+<h3 id="learning-experience-2">Learning Experience #2</h3>
+<p>I booked attempt No.2 for 5/21/2019 at 8 AM and&hellip;I earned a resounding <strong>ZERO</strong> points! I am not ashamed to say that I cried.  How did I achieve such an excellent score?  To coin a phrase, I <em>“fell down a rabbit hole”</em>.  Something that <em>seemed</em> to be right, wasn’t.  I then spent so much time trying to fix the issue that I was too mentally exhausted to concentrate on the remainder of the exam&hellip;❌<strong>don&rsquo;t do that!</strong> When you’re working through a problem and you hit something that should work but isn’t working, go AFK<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>, take a break (rest, walk, eat , nap/sleep, play a game etc.) and return to the problem.  Anyways, in sports lingo, we’re now Zero for Two.</p>
+<h3 id="learning-experience-3">Learning Experience #3</h3>
+<p>I booked attempt No.3 for 10/15/2019 at 12PM. You may have noticed by now that I’ve taken the exam at three different times in the day&hellip;❌<strong>don&rsquo;t do that!</strong>  Find the timeslot that works for you, particularly with regards to your sleep/wake cycle; mine turned out to be between 11 and 2pm…but I digress.  I took some of the lessons from the previous attempts and the thing I got wrong on the 2nd attempt, I got right third time around.  However, I’d spent so much time (again) getting it right, I was burned out, scraped half-marks on another item and stumbled out of the ring with 35 points and &hellip;yah&hellip;Zero for Three.</p>
+<p>I <em>really</em> thought I was going to pass <em>this</em> time so I was totally bummed out&hellip;OK…depressed.  I told friends and family that I was done, that this obviously wasn’t for me and I quit&hellip;❌<strong>don&rsquo;t do that!</strong> They wouldn’t have any of it!  They encouraged me to rest…and go back again! ✔️ <strong>Do this!</strong>  Now I had eight weeks to cool off but now I’m tapped-out financially.  A thought dropped into my head, which I took to my wife and then acted upon it.  I started a GofundMe campaign and reached out to family, friends and the hacker community to ask if they would consider contributing to cover the costs of my next exam attempt.  By God&rsquo;s grace, I raised enough to fund attempt No.4!  Special shout-out to <strong>Marcus J Carey</strong> (author of Tribe of Hackers), <strong>“Darktheli”</strong> and my parents for their “above and beyond” support…and thanks to everyone who’s reading this who I forgot supported the campaign. Heck&hellip;here&rsquo;s a nod to those naysayers who said, “Really, dude???”&hellip;even <em>you</em> helped! (nod)</p>
+<h3 id="learning-experience-4">Learning Experience #4</h3>
+<p>Roll on February 6th 2020, 2PM and attempt No.4.  I <em>really, really</em> felt like I had it <em>this</em> time…and I did…<em>almost</em>!  My wife sat with me for 12hrs of this attempt to ensure I stayed positive, stayed on task, took breaks and stayed hydrated&hellip;✔️<strong>do this!</strong>  24hrs later? 62.5 points, plus 5 bonus points for the lab and exercises (which I eventually completed during the eight-week cooling-off period); 67.5 points in total.  2.5 points away from passing! Dang! I thought getting ZERO on the 2nd attempt was tough…I’d gotten low marks before on exams, but I’d NEVER EVER got ZERO!  However, being 2.5 points short of the mark <em>really</em> sucked.  To make matters worse, when I looked back over my exam notes and did some research, I found that I could have gotten the full 100 points, let alone a passing mark of 70!  All I needed to do was to find the typo that I found <em>12 weeks later</em> (when I wasn’t watching the clock and stressing) and the solution to one problem that I found a half hour AFTER the exam ended! ❌<strong>Don&rsquo;t do that!</strong>  Well, I’m now Zero for Four <strong>BUT</strong> I’m determined more than ever to pass!  Recent changes in the retake policy doubled the cool-off period to twelve weeks.  I chose to wait twenty-one weeks, targeted my weaknesses (technically and mentally) and prepared to stare down the dragon Kali again.</p>
+<p>A major game-changer during this period was VHL<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> . I took out a 6 month subscription on February 25th and got busy!  I also joined @Rowbot&rsquo;s <a href="https://discord.gg/BAMhAXW">VHL</a> Discord server, where I currently help out as a co-Admin.  I can&rsquo;t say enough good things about the server. Great community of folks who are eager to shape the future of the game by stretching themselves in new directions, helping others along the way&hellip;but I digress.  With much determination, late nights, early morning and nudges from my compadres when my brain was farting (you know who you are), I completed the VHL Advanced (Red) cert on April 17th.   On May 14th, I booked my exam for September 2nd 2020.  Four days later, I had completed the VHL Advanced+ (Blue) cert. Now to hunker down and get set for the battle.</p>
+<h3 id="learning-experience-5">Learning Experience #5</h3>
+<p>July 2nd, I stepped into the ring again at 2PM.  I had been itching to face the Dragon Kali for weeks.  In fact, I was itchign so bad, I brought the exam forward two months to get the battle over and done!  24hrs later, I staggered out, battered and bruise…with 85 points!  PASSED! ✔️<strong>DO THIS!</strong> 👍</p>
+<p>P.S Big shout out and 👊 to @ZeroDay who helped me to <em>finally</em> get something systematically right, once and for all!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://searchsecurity.techtarget.com/definition/penetration-testing">https://searchsecurity.techtarget.com/definition/penetration-testing</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://www.offensive-security.com/pwk-oscp/">https://www.offensive-security.com/pwk-oscp/</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://www.trendmicro.com/vinfo/us/security/definition/exploit">https://www.trendmicro.com/vinfo/us/security/definition/exploit</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://www.cybrary.it/course/python-security-professionals-archive/">https://www.cybrary.it/course/python-security-professionals-archive/</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><a href="https://www.cybrary.it/course/advanced-penetration-testing/">https://www.cybrary.it/course/advanced-penetration-testing/</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p><a href="https://www.virtualhackinglabs.com/">https://www.virtualhackinglabs.com/</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p><a href="https://www.elearnsecurity.com/course/">https://www.elearnsecurity.com/course/</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p><a href="https://www.pentesteracademy.com/topics">https://www.pentesteracademy.com/topics</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p><a href="https://www.offensive-security.com/pwk-oscp/">https://www.offensive-security.com/pwk-oscp/</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p><a href="https://www.urbandictionary.com/define.php?term=afk">https://www.urbandictionary.com/define.php?term=afk</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

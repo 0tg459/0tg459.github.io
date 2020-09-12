@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hacking on Hello Friend...</title>
+    <link>/tags/hacking/</link>
+    <description>Recent content in hacking on Hello Friend...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 09 Sep 2020 21:02:28 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to fail, fail, fail, fail and PASS the OSCP!</title>
+      <link>/posts/2020/09/how-to-fail-fail-fail-fail-and-pass-the-oscp/</link>
+      <pubDate>Wed, 09 Sep 2020 21:02:28 -0400</pubDate>
+      
+      <guid>/posts/2020/09/how-to-fail-fail-fail-fail-and-pass-the-oscp/</guid>
+      <description>“I know not how to aid you, save in the assurance of one of mature age, and much severe experience, that you cannot fail, if you resolutely determine, that you will not. “ ~Abraham Lincoln
+“Effort only fully releases its reward after a person refuses to quit.” ~Napoleon Hill
+“Ask and keep on asking and it will be given to you; seek and keep on seeking and you will find; knock and keep on knocking and the door will be opened to you” ~Jesus Christ</description>
+    </item>
+    
+  </channel>
+</rss>

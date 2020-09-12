@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="0tg459 ">
+<meta name="description" content="“I know not how to aid you, save in the assurance of one of mature age, and much severe experience, that you cannot fail, if you resolutely determine, that you will not. “ ~Abraham Lincoln
+“Effort only fully releases its reward after a person refuses to quit.” ~Napoleon Hill
+“Ask and keep on asking and it will be given to you; seek and keep on seeking and you will find; knock and keep on knocking and the door will be opened to you” ~Jesus Christ" />
+<meta name="keywords" content=", OSCP, VHL, PWK, HTB, Vulnhub, Certification, Infosec, Security, hacking, pentest" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="/posts/2020/09/how-to-fail-fail-fail-fail-and-pass-the-oscp/" />
+
+
+    <title>
+        
+            How to fail, fail, fail, fail and PASS the OSCP! :: Hello Friend...  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.d1ea4af8fd04fb24a4f8b882ea54bd04eb245427ca4baf527c81a5dab071410b.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="How to fail, fail, fail, fail and PASS the OSCP!">
+<meta itemprop="description" content="“I know not how to aid you, save in the assurance of one of mature age, and much severe experience, that you cannot fail, if you resolutely determine, that you will not. “ ~Abraham Lincoln
+“Effort only fully releases its reward after a person refuses to quit.” ~Napoleon Hill
+“Ask and keep on asking and it will be given to you; seek and keep on seeking and you will find; knock and keep on knocking and the door will be opened to you” ~Jesus Christ">
+<meta itemprop="datePublished" content="2020-09-09T21:02:28-04:00" />
+<meta itemprop="dateModified" content="2020-09-09T21:02:28-04:00" />
+<meta itemprop="wordCount" content="1500">
+<meta itemprop="image" content=""/>
+
+
+
+<meta itemprop="keywords" content="OSCP,VHL,PWK,HTB,Vulnhub,Certification,Infosec,Security,hacking,pentest," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content=""/>
+
+<meta name="twitter:title" content="How to fail, fail, fail, fail and PASS the OSCP!"/>
+<meta name="twitter:description" content="“I know not how to aid you, save in the assurance of one of mature age, and much severe experience, that you cannot fail, if you resolutely determine, that you will not. “ ~Abraham Lincoln
+“Effort only fully releases its reward after a person refuses to quit.” ~Napoleon Hill
+“Ask and keep on asking and it will be given to you; seek and keep on seeking and you will find; knock and keep on knocking and the door will be opened to you” ~Jesus Christ"/>
+
+
+
+    <meta property="og:title" content="How to fail, fail, fail, fail and PASS the OSCP!" />
+<meta property="og:description" content="“I know not how to aid you, save in the assurance of one of mature age, and much severe experience, that you cannot fail, if you resolutely determine, that you will not. “ ~Abraham Lincoln
+“Effort only fully releases its reward after a person refuses to quit.” ~Napoleon Hill
+“Ask and keep on asking and it will be given to you; seek and keep on seeking and you will find; knock and keep on knocking and the door will be opened to you” ~Jesus Christ" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2020/09/how-to-fail-fail-fail-fail-and-pass-the-oscp/" />
+<meta property="og:image" content=""/>
+<meta property="article:published_time" content="2020-09-09T21:02:28-04:00" />
+<meta property="article:modified_time" content="2020-09-09T21:02:28-04:00" />
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-09-09 21:02:28 -0400 EDT" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /root/pwned/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="about/">About</a></li><li><a href="posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        8 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="/posts/2020/09/how-to-fail-fail-fail-fail-and-pass-the-oscp/">How to fail, fail, fail, fail and PASS the OSCP!</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><em>“I know not how to aid you, save in the assurance of one of mature age, and much severe experience, that you cannot fail, if you resolutely determine, that you will not. “ ~Abraham Lincoln</em></p>
+<p><em>“Effort only fully releases its reward after a person refuses to quit.” ~Napoleon Hill</em></p>
+<p><em>“Ask and keep on asking and it will be given to you; seek and keep on seeking and you will find; knock and keep on knocking and the door will be opened to you”  ~Jesus Christ</em></p>
+<h3 id="why">Why?</h3>
+<p>In the fall of my 50th year on this third rock from the sun, I decided to teach myself the art of pen testing.  No…I don’t mean sitting at a desk all day, testing BICs, Pentels and Sharpies LOL!  I mean: “the practice of testing a computer system, network or web application to find security vulnerabilities that an attacker could exploit.”<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>  I also elected to test my skills by undertaking the grueling 48hr OSCP exam offered by Offensive Security Inc<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>  That “48hr” was NOT a typo! A valid question: WHY?  Well, to be honest, I needed a challenge after obtaining the coveted CISSP designation the summer before and I heard that the OSCP was <strong>hard</strong>…so I took it!</p>
+<h3 id="how">How?</h3>
+<p>I had read that it would be beneficial to get a basic grasp of a programming language and that Python was the best place to start as most exploits<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> were written in Python.  So, I took a Cybrary course, “python for Security Professionals” by Joe Perry<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, followed by “Advanced Penetration Testing” by Georgia Weidman<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.  On completion of these invaluable courses, I started to look around for a course that would help me prepare for the OSCP.  Now, there are a number of other excellent pen testing courses available from vendors such as Virtual Hacking Labs<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> , Elearnsecurity<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>  and Pentester Academy (formerly SecurityTube)<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>, but I felt that if I wanted to be successful in the exam, I needed to get used to the OSCP way of doing things, so I took the plunge on November 18th 2018 and signed up for the OSCP course<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.  I joined a couple online forums, asked some preliminary questions and got started. Now, truth be told, I wanted to get fingers to keyboard asap, so I skipped through the course manual and didn’t do the exercises…I found it boring (I heard the February 2020 update is better) and TBH, I just wanted to get to hacking 😁 Well, let&rsquo;s go see how that worked out for me! 😉</p>
+<h3 id="learning-experience-1">Learning Experience #1</h3>
+<p>I booked my first exam attempt for April 16th 2019…at 1AM!  Please don’t ask me why…this was sooooooo NOT aligned with my sleep cycle.  I got hopped-up on three cans od Red Bull (I hadn’t drunk the stuff since Y2K night, 20 yrs ago!) and went for it.   It DID NOT go well. I got paid in kind for “skipping the boring stuff”.  I needed 70 points to pass…I got 45.  Lessons learned:</p>
+<ol>
+<li>
+<p>getting wired on three cans of Red Bull…❌<strong>don’t do that!</strong></p>
+</li>
+<li>
+<p>Not paying heed to your PC overheating…until your 9yr-old CPU cooling component fails a half-hour before your exam, causing you to have to resurrect a standby machine…❌<strong>don’t do that!</strong></p>
+</li>
+<li>
+<p>Not excluding virtual machine folder from your antivirus software… ❌<strong>don’t do that!</strong></p>
+</li>
+</ol>
+<p>Eish!  It’s a wonder I made it to the end of the exam without resorting to banging my head against a wall!  Anyways, to cut a long story short, 23hrs and 45mins later, I collapsed at the finish line, on the “learning end” of the first exam attempt.  45 wasn’t bad for a first attempt, but I was hungry for that “pass”, so I waited out the cooling-off period, determined to give it another shot.</p>
+<h3 id="learning-experience-2">Learning Experience #2</h3>
+<p>I booked attempt No.2 for 5/21/2019 at 8 AM and&hellip;I earned a resounding <strong>ZERO</strong> points! I am not ashamed to say that I cried.  How did I achieve such an excellent score?  To coin a phrase, I <em>“fell down a rabbit hole”</em>.  Something that <em>seemed</em> to be right, wasn’t.  I then spent so much time trying to fix the issue that I was too mentally exhausted to concentrate on the remainder of the exam&hellip;❌<strong>don&rsquo;t do that!</strong> When you’re working through a problem and you hit something that should work but isn’t working, go AFK<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>, take a break (rest, walk, eat , nap/sleep, play a game etc.) and return to the problem.  Anyways, in sports lingo, we’re now Zero for Two.</p>
+<h3 id="learning-experience-3">Learning Experience #3</h3>
+<p>I booked attempt No.3 for 10/15/2019 at 12PM. You may have noticed by now that I’ve taken the exam at three different times in the day&hellip;❌<strong>don&rsquo;t do that!</strong>  Find the timeslot that works for you, particularly with regards to your sleep/wake cycle; mine turned out to be between 11 and 2pm…but I digress.  I took some of the lessons from the previous attempts and the thing I got wrong on the 2nd attempt, I got right third time around.  However, I’d spent so much time (again) getting it right, I was burned out, scraped half-marks on another item and stumbled out of the ring with 35 points and &hellip;yah&hellip;Zero for Three.</p>
+<p>I <em>really</em> thought I was going to pass <em>this</em> time so I was totally bummed out&hellip;OK…depressed.  I told friends and family that I was done, that this obviously wasn’t for me and I quit&hellip;❌<strong>don&rsquo;t do that!</strong> They wouldn’t have any of it!  They encouraged me to rest…and go back again! ✔️ <strong>Do this!</strong>  Now I had eight weeks to cool off but now I’m tapped-out financially.  A thought dropped into my head, which I took to my wife and then acted upon it.  I started a GofundMe campaign and reached out to family, friends and the hacker community to ask if they would consider contributing to cover the costs of my next exam attempt.  By God&rsquo;s grace, I raised enough to fund attempt No.4!  Special shout-out to <strong>Marcus J Carey</strong> (author of Tribe of Hackers), <strong>“Darktheli”</strong> and my parents for their “above and beyond” support…and thanks to everyone who’s reading this who I forgot supported the campaign. Heck&hellip;here&rsquo;s a nod to those naysayers who said, “Really, dude???”&hellip;even <em>you</em> helped! (nod)</p>
+<h3 id="learning-experience-4">Learning Experience #4</h3>
+<p>Roll on February 6th 2020, 2PM and attempt No.4.  I <em>really, really</em> felt like I had it <em>this</em> time…and I did…<em>almost</em>!  My wife sat with me for 12hrs of this attempt to ensure I stayed positive, stayed on task, took breaks and stayed hydrated&hellip;✔️<strong>do this!</strong>  24hrs later? 62.5 points, plus 5 bonus points for the lab and exercises (which I eventually completed during the eight-week cooling-off period); 67.5 points in total.  2.5 points away from passing! Dang! I thought getting ZERO on the 2nd attempt was tough…I’d gotten low marks before on exams, but I’d NEVER EVER got ZERO!  However, being 2.5 points short of the mark <em>really</em> sucked.  To make matters worse, when I looked back over my exam notes and did some research, I found that I could have gotten the full 100 points, let alone a passing mark of 70!  All I needed to do was to find the typo that I found <em>12 weeks later</em> (when I wasn’t watching the clock and stressing) and the solution to one problem that I found a half hour AFTER the exam ended! ❌<strong>Don&rsquo;t do that!</strong>  Well, I’m now Zero for Four <strong>BUT</strong> I’m determined more than ever to pass!  Recent changes in the retake policy doubled the cool-off period to twelve weeks.  I chose to wait twenty-one weeks, targeted my weaknesses (technically and mentally) and prepared to stare down the dragon Kali again.</p>
+<p>A major game-changer during this period was VHL<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> . I took out a 6 month subscription on February 25th and got busy!  I also joined @Rowbot&rsquo;s <a href="https://discord.gg/BAMhAXW">VHL</a> Discord server, where I currently help out as a co-Admin.  I can&rsquo;t say enough good things about the server. Great community of folks who are eager to shape the future of the game by stretching themselves in new directions, helping others along the way&hellip;but I digress.  With much determination, late nights, early morning and nudges from my compadres when my brain was farting (you know who you are), I completed the VHL Advanced (Red) cert on April 17th.   On May 14th, I booked my exam for September 2nd 2020.  Four days later, I had completed the VHL Advanced+ (Blue) cert. Now to hunker down and get set for the battle.</p>
+<h3 id="learning-experience-5">Learning Experience #5</h3>
+<p>July 2nd, I stepped into the ring again at 2PM.  I had been itching to face the Dragon Kali for weeks.  In fact, I was itchign so bad, I brought the exam forward two months to get the battle over and done!  24hrs later, I staggered out, battered and bruise…with 85 points!  PASSED! ✔️<strong>DO THIS!</strong> 👍</p>
+<p>P.S Big shout out and 👊 to @ZeroDay who helped me to <em>finally</em> get something systematically right, once and for all!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://searchsecurity.techtarget.com/definition/penetration-testing">https://searchsecurity.techtarget.com/definition/penetration-testing</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://www.offensive-security.com/pwk-oscp/">https://www.offensive-security.com/pwk-oscp/</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://www.trendmicro.com/vinfo/us/security/definition/exploit">https://www.trendmicro.com/vinfo/us/security/definition/exploit</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://www.cybrary.it/course/python-security-professionals-archive/">https://www.cybrary.it/course/python-security-professionals-archive/</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><a href="https://www.cybrary.it/course/advanced-penetration-testing/">https://www.cybrary.it/course/advanced-penetration-testing/</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p><a href="https://www.virtualhackinglabs.com/">https://www.virtualhackinglabs.com/</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p><a href="https://www.elearnsecurity.com/course/">https://www.elearnsecurity.com/course/</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p><a href="https://www.pentesteracademy.com/topics">https://www.pentesteracademy.com/topics</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p><a href="https://www.offensive-security.com/pwk-oscp/">https://www.offensive-security.com/pwk-oscp/</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p><a href="https://www.urbandictionary.com/define.php?term=afk">https://www.urbandictionary.com/define.php?term=afk</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="tags/oscp/">OSCP</a></span>
+        <span class="tag"><a href="tags/vhl/">VHL</a></span>
+        <span class="tag"><a href="tags/pwk/">PWK</a></span>
+        <span class="tag"><a href="tags/htb/">HTB</a></span>
+        <span class="tag"><a href="tags/vulnhub/">Vulnhub</a></span>
+        <span class="tag"><a href="tags/certification/">Certification</a></span>
+        <span class="tag"><a href="tags/infosec/">Infosec</a></span>
+        <span class="tag"><a href="tags/security/">Security</a></span>
+        <span class="tag"><a href="tags/hacking/">hacking</a></span>
+        <span class="tag"><a href="tags/pentest/">pentest</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1500 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-09-09 21:02
+        
+
+         
+          
+        
+      </p>
+    </div>
+      <hr />
+      <div class="sharing-buttons">
+        
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21&amp;caption=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21&amp;canonicalUrl=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
+    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="mailto:?subject=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21&amp;body=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f&amp;media=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f;description=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f&amp;title=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21&amp;summary=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21&amp;source=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f&amp;resubmit=true&amp;title=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f;title=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+  <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21%20%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f&amp;t=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+  <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=How%20to%20fail%2c%20fail%2c%20fail%2c%20fail%20and%20PASS%20the%20OSCP%21&amp;url=%2fposts%2f2020%2f09%2fhow-to-fail-fail-fail-fail-and-pass-the-oscp%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+  <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    </div>
+  </div>
+</a>
+
+      </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="/posts/2020/09/first-post/">
+                <span class="button__icon">←</span>
+                <span class="button__text">First Post</span>
+              </a>
+            </span>
+          
+
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="">0tg459</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            <span> <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
